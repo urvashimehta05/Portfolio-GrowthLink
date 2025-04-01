@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>
+            MY PORTFOLIO
+        </title>
+        <link href="style.css" rel="stylesheet">
+        <link href="mediaqueries.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+        <div class="logo">URVASHI</div>
+        <div>
+<ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Project</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+        </div>
+        </nav>
+         <!-- This is essential for the mobile navigation  -->
+        <nav id="hamburger-nav">
+            <div class="logo">URVASHI</div>
+            <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills"onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="profile_pic-container"height="100px" width="100px">
+                <img src="profile-pic.JPG" alt="Urvashi profile picture">
+            </div>
+            <div class="section_text">
+                <p class="sextion_text_p1">Hello, I'm</p>
+                <h1 class="title"> Urvashi</h1>
+                <div class="section_text_p2">MERN Stack Developer</div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('resume_urvashi25.pdf')">
+                    Download Resume
+                    </button>
+                    <button class="btn btn-color-1"
+                    onclick="location.href='#contact'">
+                Contact Info
+                </button>
+                <div id="social-container">
+                    <img src="C:\Users\LENOVO\Desktop\assets\linkedin.png" height="70" width="70"alt="My linkedin profile"onclick="location.href='https://www.linkedin.com/in/urvashi-m-264026301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app '">
+                    <img src="C:\Users\LENOVO\Desktop\assets\github.png" height="70" width="70" alt="My github profile" onclick="location.href='https://github.com/urvashimehta05'">
+                </div>
+                </div>
+            </div>
+        </section>
+             <!-- This is about me section. Section id is for connecting web pages -->
+        <section id="about">
+            <p class="section_text_p1">
+                 Get to know more
+            </p>
+            <h1 class="title">About Me</h1> 
+            <div class="details-container">
+                <h3 class="ed-h1">Education</h3>
+                <p class="in-detail">B.Sc. Bachelors Degree<br />M.C.A. Masters Degree</p>
+              </div>
+            </div>
+
+            <section class="section-container">
+                <div class="section_pic-container">
+
+                <img src=".\assets\pic.jpg"class="about-pic">
+                </div>
+                <div class="about_me_text">
+                    I am Urvashi, an IT student aspiring to become a full
+                    stack Developer. From the curious personality to a web developer. well, Its an exciting journey.I have made a variety of the projects to enhance my skills. Now, I'm ready to take my development skills to the production level.
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skills-container">
+            <h1 class="title">Skills</h1>
+                <div class="card-1">
+                <h2>FRONT-END</h2>
+               <p class="tech-skills">HTML, CSS, JavaScript, ReacJs</p>
+                </div>
+<div class="card-1">
+    <h2>BACK-END</h2>
+<p class="tech-skills">NodeJs, ExpressJs, C++, Java</p>
+</div>
+<div class="card-1">
+    <h2>Database</h2>
+<p class="tech-skills">MongoDb, SQL</p>
+</div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="title">Projects</h1>
+            <br>
+            <div class="project-card-1">
+            <h1 class="main-head">WANDERLUST</h1>
+            <br><br>
+               <div id="tech">HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, EJS,</div>
+<br><br><br>
+<div class="project-card">
+WanderLust is a full-stack web application that allows users to explore, create, and manage travel property listings. It includes authentication, validation, and CRUD functionalities for seamless user experience.
+<img src=".\assets\project-1.png"height="300px" width="600px"class="prj-pic"onclick="location.href='https://github.com/urvashimehta05/WANDER-LUST'">
+</div>
+</div>
+<div class="project-card-1">
+            <h1 class="main-head">Simon Game – Classic Memory Challenge</h1>
+            <br><br>
+               <div id="tech"> HTML,CSS,JAVASCRIPT</div>
+<br><br><br>
+<div class="project-card">
+    Simon Game is a web-based interactive memory game where players must replicate an increasing sequence of colored button presses. The game tests users' memory and attention span with progressively challenging levels.
+    Dynamic Sequence Generation: Each round adds a new step to the pattern.<br>
+User Interaction: Players must repeat the correct sequence using keyboard or mouse clicks.
+Difficulty Progression: The game gets progressively harder with each correct round.
+
+ Over & Restart Logic: Clear feedback when the user makes a mistake, allowing for replay.
+
+<img src=".\assets\project-2.png"height="300px"width="300px"class="prj-pic"onclick="location.href='https://github.com/urvashimehta05/simon-game'">
+</div>
+</div>
+<div class="project-card-1">
+    <h1 class="main-head">Weather App</h1>
+    <br><br>
+       <div id="tech"> HTML,CSS,JAVASCRIPT</div>
+<br><br><br>
+<div class="project-card">
+    A sleek and responsive web application that provides real-time weather updates for any city worldwide. The app fetches live weather data using the OpenWeather API and presents it in a user-friendly interface.
+    Real-Time Weather Data: Get current temperature, humidity, wind speed, and weather conditions.<br>
+    Features:<br>
+    Search Functionality: Users can search for weather details of any city globally.
+    Dynamic Background & Icons: Changes based on weather conditions.
+    Responsive UI: Works across different screen sizes. 
+<img src=".\assets\project-3.png"height="300px"width="300px"onclick="location.href='https://github.com/urvashimehta05/weather-app'">
+</div>
+</div>
+</div>
+</section>      
+    </div>
+</section>   
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src=".\assets\email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="urvashimehta552@gmail.com">Urvashimehta552@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src=".\assets\linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="http://www.linkedin.com/in/urvashi-m-264026301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>                                                                           
+<script src="app.js"></script>
+    </body>
+</html>
+
+
